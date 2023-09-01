@@ -1,0 +1,16 @@
+.dialog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Agrega espacio entre los campos */
+    padding: 1rem 2rem;
+    color: white;
+  }
+  h2{
+    text-align: center;
+  }
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

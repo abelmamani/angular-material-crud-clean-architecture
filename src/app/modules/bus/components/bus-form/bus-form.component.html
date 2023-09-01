@@ -1,0 +1,24 @@
+<form [formGroup]="busForm" class="form-container">
+  <h2>{{ busData ? 'Actualizar Autobús' : 'Registrar Nuevo Autobús' }}</h2>
+
+  <mat-form-field>
+    <input matInput placeholder="License Plate" formControlName="licensePlate" >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Brand" formControlName="brand">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Model" formControlName="model">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="number" matInput placeholder="Seats" formControlName="seats" >
+  </mat-form-field>
+  <button mat-button color="warn"  (click)="onSave()">
+    {{ busData.id != 0 ? 'Actualizar' : 'Registrar' }}
+  </button>
+</form>
+
+  
+  
+  
+  
